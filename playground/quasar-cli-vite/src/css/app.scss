@@ -1,0 +1,68 @@
+// app global css in SCSS form
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transprerent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--q-primary);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--q-secondary);
+}
+
+.my-sticky-header-table {
+  /* height or max-height is important */
+  height: inherit;
+
+  .q-table__top,
+  .q-table__bottom,
+  thead tr:first-child th {
+    /* Use transparent to allow background inheritance */
+    background-color: transparent !important;
+  }
+
+  thead tr:first-child th {
+    /* Specify default color */
+    background-color: #fff !important;
+  }
+
+  thead tr th {
+    position: sticky;
+    z-index: 1;
+  }
+
+  thead tr:first-child th {
+    top: 0;
+  }
+
+  /* Dark theme-specific styles */
+  .q-dark & thead tr:first-child th {
+    background-color: var(--q-dark) !important;
+  }
+
+  /* This is when the loading indicator appears */
+  &.q-table--loading thead tr:last-child th {
+    /* height of all previous header rows */
+    top: 48px;
+  }
+
+  /* Prevent scrolling behind sticky top row on focus */
+  tbody {
+    /* height of all previous header rows */
+    scroll-margin-top: 48px;
+  }
+}

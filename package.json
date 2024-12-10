@@ -1,0 +1,28 @@
+{
+  "name": "quasar-app-extension-blazar-monorepo",
+  "private": true,
+  "author": "Dimitris Tsiantaris <dtsiantaris@gmail.com>",
+  "type": "module",
+  "workspaces": [
+    "app-extension",
+    "playground/*"
+  ],
+  "scripts": {
+    "lint": "eslint",
+    "format:root": "prettier --write \"./*.{json,md,vue,js,ts,yml}\" \"./.vscode/*.json\" --ignore-path .gitignore",
+    "format": "pnpm format:root && pnpm --recursive format"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "@types/eslint": "^8.56.10",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.12.8",
+    "eslint": "^9.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.25.0",
+    "globals": "^15.11.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.8.0"
+  }
+}

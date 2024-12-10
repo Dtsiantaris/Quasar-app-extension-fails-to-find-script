@@ -1,0 +1,72 @@
+{
+  "name": "@namespace/quasar-app-extension-blazar",
+  "version": "0.1.2",
+  "description": "A Quasar App Extension for wrapped and extended quasar components and directives.",
+  "author": "Dimitris Tsiantaris <dtsiantaris@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/runtime/index.js",
+  "module": "./dist/runtime/index.js",
+  "types": "./dist/runtime/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/runtime/index.d.ts",
+      "import": "./dist/runtime/index.js"
+    },
+    "./dist/index": {
+      "import": "./dist/index.js"
+    },
+    "./dist/install": {
+      "import": "./dist/install.js"
+    },
+    "./*": "./dist/runtime/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "build:runtime": "pnpm exec mkdist --src ./src/runtime --dist dist/runtime --ext=js --declaration --pattern=\"**/!(shims-vue.d.ts)\"",
+    "build:ae": "pnpm exec mkdist ./ --format=cjs --declaration --pattern \"**\" --pattern \"!runtime\"",
+    "build:templates": "mkdist ./ --src ./src/templates --dist ./dist/templates --loaders='raw'",
+    "build:code": "mkdist ./ --ext=js --declaration --pattern='**' --pattern='!shims-vue.d.ts' --pattern='!templates/**'",
+    "build": "pnpm run build:code && pnpm run build:templates",
+    "release:latest": "standard-version",
+    "release:latest:major": "standard-version --release-as 0.1.0",
+    "release:beta": "standard-version --prerelease beta",
+    "release:alpha": "standard-version --prerelease alpha",
+    "release:rc": "standard-version --prerelease rc",
+    "publish:latest": "pnpm run release:latest && pnpm run build && pnpm publish --tag latest --publish-branch main",
+    "publish:beta": "pnpm run release:beta && pnpm run build && pnpm publish --tag beta --publish-branch new",
+    "publish:alpha": "pnpm run release:alpha && pnpm run build && pnpm publish --tag alpha --publish-branch new",
+    "publish:next": "pnpm run release:rc && pnpm run build && pnpm publish --tag next --publish-branch new"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "2.0.1",
+    "@quasar/app-webpack": "^4.0.1",
+    "mkdist": "^1.6.0",
+    "quasar": "2.17.3",
+    "standard-version": "^9.5.0",
+    "ts-essentials": "^9.4.2",
+    "vite": "^6.0.3",
+    "vue": "3.5.13",
+    "webpack": "^5.97.1"
+  },
+  "peerDependencies": {
+    "@quasar/app-vite": "^2.0.0-beta.1",
+    "@quasar/app-webpack": "^4.0.0-beta.2",
+    "quasar": "2.17.1",
+    "vue": "^3.4.0"
+  },
+  "peerDependenciesMeta": {
+    "@quasar/app-vite": {
+      "optional": true
+    },
+    "@quasar/app-webpack": {
+      "optional": true
+    }
+  }
+}

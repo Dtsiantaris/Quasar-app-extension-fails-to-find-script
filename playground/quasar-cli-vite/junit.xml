@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="32" failures="1" errors="0" time="16.544">
+  <testsuite name="Composables/useResponsiveDialog" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:02" time="4.718" tests="1">
+    <testcase classname="Composables/useResponsiveDialog UsingTheComposable smoke-test" name="Composables/useResponsiveDialog UsingTheComposable smoke-test" time="0.259">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/BDialog" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:02" time="5.453" tests="5">
+    <testcase classname="Components/BDialog BasicUsage smoke-test" name="Components/BDialog BasicUsage smoke-test" time="0.565">
+    </testcase>
+    <testcase classname="Components/BDialog CustomizeBDialog smoke-test" name="Components/BDialog CustomizeBDialog smoke-test" time="0.063">
+    </testcase>
+    <testcase classname="Components/BDialog WithContentComponent smoke-test" name="Components/BDialog WithContentComponent smoke-test" time="0.054">
+    </testcase>
+    <testcase classname="Components/BDialog WrappedForm smoke-test" name="Components/BDialog WrappedForm smoke-test" time="0.107">
+    </testcase>
+    <testcase classname="Components/BDialog UsingSlots smoke-test" name="Components/BDialog UsingSlots smoke-test" time="0.154">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/BFilterChooser" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:07" time="2.404" tests="1">
+    <testcase classname="Components/BFilterChooser BasicUsage smoke-test" name="Components/BFilterChooser BasicUsage smoke-test" time="0.286">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/BColumnChooser" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:08" time="1.923" tests="2">
+    <testcase classname="Components/BColumnChooser BasicUsage smoke-test" name="Components/BColumnChooser BasicUsage smoke-test" time="0.186">
+    </testcase>
+    <testcase classname="Components/BColumnChooser ExcludingColumns smoke-test" name="Components/BColumnChooser ExcludingColumns smoke-test" time="0.076">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/BSelect" errors="0" failures="1" skipped="0" timestamp="2024-11-13T12:21:02" time="8.783" tests="8">
+    <testcase classname="Components/BSelect NoOption play-test" name="Components/BSelect NoOption play-test" time="0.965">
+    </testcase>
+    <testcase classname="Components/BSelect NoOptionCustomProps play-test" name="Components/BSelect NoOptionCustomProps play-test" time="0.226">
+    </testcase>
+    <testcase classname="Components/BSelect NoOptionCustomSlot play-test" name="Components/BSelect NoOptionCustomSlot play-test" time="0.195">
+    </testcase>
+    <testcase classname="Components/BSelect CustomComponentUsage play-test" name="Components/BSelect CustomComponentUsage play-test" time="0.171">
+    </testcase>
+    <testcase classname="Components/BSelect Filtering play-test" name="Components/BSelect Filtering play-test" time="0.146">
+    </testcase>
+    <testcase classname="Components/BSelect VirtualScrolling play-test" name="Components/BSelect VirtualScrolling play-test" time="2.215">
+      <failure>page.evaluate: StorybookTestRunnerError: 
+An error occurred in the following story. Access the link for full output:
+http://127.0.0.1:6006/?path=/story/components-bselect--virtual-scrolling&amp;addonPanel=storybook/interactions/panel
+
+Message:
+ Filtered options length to be 21 due to quasar devs being absolute chads.: expected 30 to be 21 // Object.is equality
+
+Ignored nodes: comments, script, style
+&lt;html
+  dir=&quot;ltr&quot;
+  lang=&quot;en-US&quot;
+&gt;
+  &lt;head&gt;
+    
+    
+    
+
+    
+    &lt;meta
+      charset=&quot;utf-8&quot;
+    /&gt;
+    
+    
+    &lt;title&gt;
+      components-bselect--virtual-scrolling
+    &lt;/title&gt;
+    
+    
+    &lt;meta
+      content=&quot;width=device-width, initial-scale=1&quot;
+      name=&quot;viewport&quot;
+    /&gt;
+    
+
+    
+    
+
+    
+    
+    
+    &lt;base
+      target=&quot;_parent&quot;
+    /&gt;
+    
+
+
+    
+
+
+    
+
+  
+    &lt;link
+      href=&quot;/favicon.ico&quot;
+      rel=&quot;shortcut icon&quot;
+    /&gt;
+  &lt;/head&gt;
+  
+
+  
+  &lt;body
+    class=&quot;sb-show-main desktop no-touch body--light sb-main-padded&quot;
+  &gt;
+    
+    
+    &lt;div
+      class=&quot;sb-preparing-story sb-wrapper&quot;
+    &gt;
+      
+  
+      &lt;div
+        class=&quot;sb-loader&quot;
+      /&gt;
+      
+
+    &lt;/div&gt;
+    
+
+
+    &lt;div
+      class=&quot;sb-preparing-docs sb-wrapper&quot;
+    &gt;
+      
+  
+      &lt;div
+        class=&quot;sb-previewBlock&quot;
+      &gt;
+        
+    
+        &lt;div…
+
+    at &lt;anonymous&gt;:328:16
+    at C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:899:58
+    at step (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:109:23)
+    at Object.next (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:50:20)
+    at asyncGeneratorStep (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:4:28)
+    at _next (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:22:17)
+    at C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:27:13
+    at C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:19:16
+    at testFn (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:951:49)
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:964:33)
+    at step (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:109:23)
+    at Object.next (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:50:20)
+    at asyncGeneratorStep (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:4:28)
+    at _next (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:22:17)
+    at C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:27:13
+    at Object.&lt;anonymous&gt; (C:\Users\Administrator\projects\blazar\playground\quasar-cli-vite\src\stories\components\BSelect\BSelect.stories.ts:19:16)
+    at Promise.then.completed (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-circus@29.7.0\node_modules\jest-circus\build\utils.js:298:28)
+    at callAsyncCircusFn (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-circus@29.7.0\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-circus@29.7.0\node_modules\jest-circus\build\run.js:316:40)
+    at _runTest (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-circus@29.7.0\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-circus@29.7.0\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-circus@29.7.0\node_modules\jest-circus\build\run.js:121:9)
+    at _runTestsForDescribeBlock (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-circus@29.7.0\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-circus@29.7.0\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-circus@29.7.0\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-circus@29.7.0\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-runner@29.7.0\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-runner@29.7.0\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\Administrator\projects\blazar\node_modules\.pnpm\jest-runner@29.7.0\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Components/BSelect AsyncOptionsFetching smoke-test" name="Components/BSelect AsyncOptionsFetching smoke-test" time="0.09">
+    </testcase>
+    <testcase classname="Components/BSelect AsyncFilteringAndScrolling play-test" name="Components/BSelect AsyncFilteringAndScrolling play-test" time="0.108">
+    </testcase>
+  </testsuite>
+  <testsuite name="Directives/ClickOutsideDirective" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:10" time="1.792" tests="1">
+    <testcase classname="Directives/ClickOutsideDirective UsingTheDirective smoke-test" name="Directives/ClickOutsideDirective UsingTheDirective smoke-test" time="0.221">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/BDatePicker" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:10" time="2.52" tests="5">
+    <testcase classname="Components/BDatePicker BasicUsage smoke-test" name="Components/BDatePicker BasicUsage smoke-test" time="0.301">
+    </testcase>
+    <testcase classname="Components/BDatePicker WithDifferentMask smoke-test" name="Components/BDatePicker WithDifferentMask smoke-test" time="0.239">
+    </testcase>
+    <testcase classname="Components/BDatePicker WithRange smoke-test" name="Components/BDatePicker WithRange smoke-test" time="0.091">
+    </testcase>
+    <testcase classname="Components/BDatePicker ManipulatingStringFormats smoke-test" name="Components/BDatePicker ManipulatingStringFormats smoke-test" time="0.063">
+    </testcase>
+    <testcase classname="Components/BDatePicker WithTime smoke-test" name="Components/BDatePicker WithTime smoke-test" time="0.056">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/BActionList" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:11" time="2.274" tests="4">
+    <testcase classname="Components/BActionList Overwiew smoke-test" name="Components/BActionList Overwiew smoke-test" time="0.652">
+    </testcase>
+    <testcase classname="Components/BActionList BasicUsage smoke-test" name="Components/BActionList BasicUsage smoke-test" time="0.132">
+    </testcase>
+    <testcase classname="Components/BActionList SlotOverride smoke-test" name="Components/BActionList SlotOverride smoke-test" time="0.077">
+    </testcase>
+    <testcase classname="Components/BActionList GlobalAndScopedProps smoke-test" name="Components/BActionList GlobalAndScopedProps smoke-test" time="0.087">
+    </testcase>
+  </testsuite>
+  <testsuite name="CLI/Commands/CreateCommands" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:12" time="2.326" tests="1">
+    <testcase classname="CLI/Commands/CreateCommands Dialog smoke-test" name="CLI/Commands/CreateCommands Dialog smoke-test" time="0.294">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/BTimePicker" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:12" time="3.393" tests="2">
+    <testcase classname="Components/BTimePicker BasicUsage smoke-test" name="Components/BTimePicker BasicUsage smoke-test" time="0.236">
+    </testcase>
+    <testcase classname="Components/BTimePicker WorkingWithDateFormats smoke-test" name="Components/BTimePicker WorkingWithDateFormats smoke-test" time="0.082">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/BBottomDrawer" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:14" time="1.772" tests="1">
+    <testcase classname="Components/BBottomDrawer BasicUsage smoke-test" name="Components/BBottomDrawer BasicUsage smoke-test" time="0.249">
+    </testcase>
+  </testsuite>
+  <testsuite name="Components/BButton" errors="0" failures="0" skipped="0" timestamp="2024-11-13T12:21:15" time="1.537" tests="1">
+    <testcase classname="Components/BButton Primary play-test" name="Components/BButton Primary play-test" time="0.113">
+    </testcase>
+  </testsuite>
+</testsuites>
