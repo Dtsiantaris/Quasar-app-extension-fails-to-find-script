@@ -26,6 +26,7 @@ The process exist with the following error message:
 # Important notes
 
 - Using `pnpm run dev/build` or `pnpm exec quasar dev/build` works in windows(tested in 2 different machines).
+- Using other package managers to run the command(tested with yarn and npm) also works.
 - Using `pnpm run dev/build` or `pnpm exec quasar dev/build` DOES NOT WORK in linux(tested in kubernetes).
 
 --Inside `playground/quasar-cli-vite` there is a `patchQuasarVite.js` file. Running this postinstall patches this behavior and everything works as expected.
@@ -36,4 +37,10 @@ The process exist with the following error message:
 - Commits one month changed the way scriptFiles are retrieved.
 - The new way utilizes [this internal function](https://github.com/quasarframework/quasar/blob/dev/app-vite/lib/utils/get-package-path.js)(@quasar/app-vite/lib/utils/get-package-path)
 
-I found [this old issue](https://github.com/nodejs/help/issues/1212) that might be related.
+# Possible solution/workarounds
+
+- pnpm/yarn/npm <command> works in windows. Maybe it does in Linux too and I just haven't tested enough.
+- This issue probably is causes by this line:
+  `"@namespace/quasar-app-extension-blazar": "link:..\\..\\app-extension",`
+  and node sometimes fails to resolve this symlink.
+- I found [this old issue](https://github.com/nodejs/help/issues/1212) that might be related.
