@@ -42,5 +42,5 @@ The process exist with the following error message:
 - pnpm/yarn/npm <command> works in windows. Maybe it does in Linux too and I just haven't tested enough.
 - This issue probably is causes by this line:
   `"@namespace/quasar-app-extension-blazar": "link:..\\..\\app-extension",`
-  and node sometimes fails to resolve this symlink.
+  inside the `package.json` and node sometimes fails to resolve this symlink.
 - I found [this old issue](https://github.com/nodejs/help/issues/1212) that might be related.
